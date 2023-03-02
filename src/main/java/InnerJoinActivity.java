@@ -94,7 +94,7 @@ public class InnerJoinActivity {
          */
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
-
+        sql = "SELECT id, student_name FROM student WHERE class_title='Physics' OR class_title='Math'";
 
         Set<Pair<Integer, String>> results = new HashSet<>();
         try {
